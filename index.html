@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="music-player">
+        <div class="song-info">
+            <img src="https://images.unsplash.com/photo-1616356607338-fd87169ecf1a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="thumbnail">
+            <h2 class="song-title">song title</h2>
+            <p class="songArtist">song artist</p>
+        </div>
+        <div class="time-display">
+            <span id="currentTime">00:00</span>
+            <span id="duration">00:00</span>
+        </div>
+        <div class="progress-volume">
+            <input type="range" id="progress" value="0" min="0" max="100">
+            <input type="range" id="volume" value="0" min="0" max="100">
+        </div>
+        <div class="music-controls">
+            <button class="prev"><i class="fa-solid fa-backward"></i></button>
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <button class="next"><i class="fa-solid fa-forward"></i></button>
+        </div>
+        <h3>Playlists</h3>
+        <div class="playlists">
+            <ul id="playlist">
+            </ul>
+        </div>
+    </div>
+
+    <audio src=""></audio>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
